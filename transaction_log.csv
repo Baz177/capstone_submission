@@ -1,0 +1,5 @@
+timestamp,distance_from_home,distance_from_last_transaction,ratio_to_median_purchase_price,repeat_retailer,used_chip,used_pin_number,online_order,prediction,verification
+2025-03-26 11:29:32,121.0,1.0,1.0,1.0,1.0,1.0,0.0,0,Verified
+2025-03-26 11:30:00,143.0,65.0,7.0,0.0,0.0,0.0,1.0,1,Verified
+2025-03-26 11:30:35,223.0,33.0,7.0,0.0,0.0,1.0,1.0,1,Verified
+2025-03-26 11:31:17,233.0,34.0,6.0,0.0,0.0,0.0,1.0,1,Not Verified

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="{{ url_for('static', filename='styles/styles.css') }}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2> Transaction: {{ status }}</h2>
+        <h3>Transaction Detail</h3>
+        <form action ="/verify_transaction" method="post">
+            <u1>
+                {% for key, value in inputs.items() %}
+                    <li>{{ key.replace('_', ' ').title() }}: {{ value }}</li>
+                    <input type="hidden" name="{{ key }}" value="{{ value }}">
+                {% endfor %}
+            <u1>
+            <input type="hidden" name="prediction" value="{{ prediction }}">
+        <h3>Was the customer contacted to verify the transaction?</h3>
+            <label>
+                <input type="radio" name="verified_outcome" value="yes" required> Yes
+            </label><br>
+            <label>
+                <input type="radio" name="verified_outcome" value="no" required> No
+            </label><br>
+            <button type="submit">Verify Transaction</button>
+        </form>
+    </div>
+</body>
+</html>
