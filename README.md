@@ -39,9 +39,9 @@ Fraud-detection-app
 - requirements.txt: List of Python dependencies.
 
 ### Installation and Setup 
-##### Step 1: Creat Project Directory (Folder) 
+##### Step 1: Create Project Directory (e.g: fraud-detection-app) 
 1. Dowloand all folders and files
-2. Create a directory system as above in your specified folder
+2. Create a directory system as above in your created folder
 3. Open you terminal in the text Editor and Navigate to your folder. 
 4. Ensure the directory is set up as above
 
@@ -54,8 +54,7 @@ Fraud-detection-app
     - You should see (venv) in your prompt.
 
 ##### Step 3: Install Dependencies
-- Dowloand all folders and files
-- Create a directory system as above
+- Assuming a directory system as above
 - install dependencies: run the following in the terminal *pip install -r requirments.txt*
 
 ##### Step 4: Your program is ready to run. 
